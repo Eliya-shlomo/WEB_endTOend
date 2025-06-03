@@ -4,7 +4,7 @@ data "aws_availability_zones" "available"{
 
 #Main vpc
 resource "aws_vpc" "my_vpc" {
-  cidr_block = var.MY_VPC_CIDR_BLOC
+  cidr_block = var.MY_VPC_CIDR_BLOCK
   enable_dns_support = "true"
   enable_dns_hostnames = "true"
   tags = {
@@ -128,13 +128,13 @@ resource "aws_route_table_association" "to_public_subnet_2" {
 }
 
 resource "aws_route_table_association" "to_private_subnet_1" {
-  subnet_id = aws_subnet.my_vpc_public_subnet_1.id
-  route_table_id = aws_route_table.public.id
+  subnet_id      = aws_subnet.my_vpc_private_subnet_1.id
+  route_table_id = aws_route_table.private.id
 }
 
 resource "aws_route_table_association" "to_private_subnet_2" {
-  subnet_id = aws_subnet.my_vpc_public_subnet_2.id
-  route_table_id = aws_route_table.public.id
+  subnet_id      = aws_subnet.my_vpc_private_subnet_2.id
+  route_table_id = aws_route_table.private.id
 }
 
 provider "aws" {

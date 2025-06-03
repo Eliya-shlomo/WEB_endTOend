@@ -6,7 +6,7 @@
 # }
 
 module "my-rds" {
-    source      = "../module/rds"
+    source      = "../moudle/rds"
 
     ENVIRONMENT = var.ENVIRONMENT
     AWS_REGION  = var.AWS_REGION

@@ -32,3 +32,16 @@ It demonstrates the deployment of a VPC, RDS database, ALB (Application Load Bal
 ```bash
 git clone https://github.com/Eliya-shlomo/WEB_endTOend.git
 cd WEB_endTOend
+```
+
+2. **Initialize Terraform**:
+
+```bash
+terraform init
+```
+
+3. **Apply the configuration**:
+
+```bash
+terraform apply
+```
