@@ -5,7 +5,7 @@ data "aws_availability_zones" "available" {
 
 # Main  vpc
 resource "aws_vpc" "my_vpc" {
-  cidr_block       = var.MY_VPC_CIDR_BLOC
+  cidr_block       = var.MY_VPC_CIDR_BLOCK
   enable_dns_support = "true"
   enable_dns_hostnames = "true"
   tags = {
@@ -153,5 +153,5 @@ output "public_subnet1_id" {
 
 output "public_subnet2_id" {
   description = "Subnet ID"
-  value       = aws_subnet.my_vpc_private_subnet_2.id
+  value       = aws_subnet.my_vpc_public_subnet_2.id
 }

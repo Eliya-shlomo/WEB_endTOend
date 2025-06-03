@@ -3,7 +3,7 @@ variable "AWS_REGION" {
     default     = "us-east-2"
 }
 
-variable "MY_VPC_CIDR_BLOC" {
+variable "MY_VPC_CIDR_BLOCK" {
   description = "The CIDR block for the VPC"
   type        = string
   default     = "10.0.0.0/16"
