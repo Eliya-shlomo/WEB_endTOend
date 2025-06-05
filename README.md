@@ -32,3 +32,9 @@ It demonstrates the deployment of a VPC, RDS database, ALB (Application Load Bal
 ```bash
 git clone https://github.com/Eliya-shlomo/WEB_endTOend.git
 cd WEB_endTOend
+
+
+
+
+[תכנון מערכת פרסום אוטומטי באינסטגרם לעסקים קטנים.pdf](https://github.com/user-attachments/files/20608783/default.pdf)
+
