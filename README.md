@@ -36,5 +36,4 @@ cd WEB_endTOend
 
 
 
-[תכנון מערכת פרסום אוטומטי באינסטגרם לעסקים קטנים.pdf](https://github.com/user-attachments/files/20608783/default.pdf)
 
